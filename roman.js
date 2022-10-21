@@ -5,7 +5,8 @@ const singleCharInts = {
   50: 'L',
   100: 'C',
   500: 'D',
-  1000: 'M'
+  1000: 'M',
+  1666: 'MDCLXVI'
 }
 
 function intToRoman(n) {

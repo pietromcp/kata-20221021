@@ -29,3 +29,9 @@ describe("Convert int into single-char roman", function () {
     expect(intToRoman(1000)).toBe("M")
   })
 });
+
+describe("Convert int into multi char roman", function () {
+  it("1666 --> MDCLXVI", function () {
+    expect(intToRoman(1666)).toBe("MDCLXVI")
+  })
+})
