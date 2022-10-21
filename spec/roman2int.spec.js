@@ -8,7 +8,8 @@ describe("Convert roman into int", function () {
     "L": 50,
     "C": 100,
     "D": 500,
-    "M": 1000
+    "M": 1000,
+    "MDCLXVI": 1666
   }
 
   for (let [key, value] of Object.entries(testCases)) {

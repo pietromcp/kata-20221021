@@ -26,7 +26,9 @@ function intToRoman(n) {
 }
 
 function romanToInt(r) {
-  return singleCharInts.find(x => x.value === r).key
+  return r.split("")
+  .reduce((acc, curr) => 
+    acc + singleCharInts.find(x => x.value === curr).key, 0)
 }
 
 module.exports = {
