@@ -20,4 +20,8 @@ describe("Convert int into single-char roman", function () {
   it("100 --> C", function () {
     expect(intToRoman(100)).toBe("C")
   })
+
+  it("500 --> D", function () {
+    expect(intToRoman(500)).toBe("D")
+  })
 });
