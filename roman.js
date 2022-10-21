@@ -20,6 +20,11 @@ function intToRoman(n) {
   return output
 }
 
+function romanToInt(r) {
+  return 1
+}
+
 module.exports = {
-  intToRoman
+  intToRoman,
+  romanToInt
 }
