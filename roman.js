@@ -26,7 +26,7 @@ function intToRoman(n) {
 }
 
 function romanToInt(r) {
-  return 1
+  return singleCharInts.find(x => x.value === r).key
 }
 
 module.exports = {
