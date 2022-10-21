@@ -1,5 +1,4 @@
 const singleCharInts = [
-  { key: 1666, value: "MDCLXVI" },
   { key: 1000, value: "M" },
   { key: 500, value: "D" },
   { key: 100, value: "C" },
@@ -10,12 +9,14 @@ const singleCharInts = [
 ]
 
 function intToRoman(n) {
-  return singleCharInts.find(x => x.key === n).value
-  // let output = ""
-
-
-
-  // return output || singleCharInts[n]
+  let output = ""
+  for(let { key, value } of singleCharInts) {
+    while(n >= key) {
+      n -= key
+      output += value
+    }
+  }
+  return output
 }
 
 module.exports = {
