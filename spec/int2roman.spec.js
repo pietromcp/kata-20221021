@@ -34,4 +34,12 @@ describe("Convert int into multi char roman", function () {
   it("1666 --> MDCLXVI", function () {
     expect(intToRoman(1666)).toBe("MDCLXVI")
   })
+
+  it("37 --> XXXVII", function () {
+    expect(intToRoman(37)).toBe("XXXVII")
+  })
+
+  it("3333 --> MMMCCCXXXIII", function () {
+    expect(intToRoman(3333)).toBe("MMMCCCXXXIII")
+  })
 })
