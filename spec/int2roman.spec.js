@@ -43,3 +43,9 @@ describe("Convert int into multi char roman", function () {
     expect(intToRoman(3333)).toBe("MMMCCCXXXIII")
   })
 })
+
+describe("Convert int into multi char roman handling subtractions", function () {
+  it("4 --> IV", function () {
+    expect(intToRoman(4)).toBe("IV")
+  })
+})
