@@ -47,5 +47,25 @@ describe("Convert int into multi char roman", function () {
 describe("Convert int into multi char roman handling subtractions", function () {
   it("4 --> IV", function () {
     expect(intToRoman(4)).toBe("IV")
-  })
+	})
+	
+	it("9 --> IX", function () {
+    expect(intToRoman(9)).toBe("IX")
+	})
+
+	it("40 --> XL", function () {
+    expect(intToRoman(40)).toBe("XL")
+	})
+
+	it("90 --> XC", function () {
+    expect(intToRoman(90)).toBe("XC")
+	})
+
+	it("400 --> CD", function () {
+    expect(intToRoman(400)).toBe("CD")
+	})
+
+	it("900 --> CM", function () {
+    expect(intToRoman(900)).toBe("CM")
+	})
 })
